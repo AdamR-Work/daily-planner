@@ -1,0 +1,221 @@
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <title>Daily Planner</title>
+
+    </head>
+    <body>
+        <!-- title and discription -->
+      <header>
+          <h1>Daily Planner</h1>
+          <p>Your helper to keep you organized throughout the day</p>  
+        </header>
+        <!-- containter for the planner -->
+        <div class="container">
+        <div id="plan-holder" class="row">
+            <!-- holder for info based on hour-->
+            <div id="7am" class="row">
+                <!-- Time in blocks -->
+                <div data-type="plan-time" class="col-1 border border-3 border-secondary p-1 text-center">
+                    7:00am
+                </div>
+                <!-- where the task text will display -->
+                <div data-type="plan-text" class="col-10 border border-3 border-secondary p-1 text-center">
+                </div>
+                <!-- save button -->
+                <div data-type="plan-save-btn" class="col-1 border border-3 border-secondary p-1 text-center">
+                    Save
+                </div>
+            </div>
+            <div id="8am" class="row">
+                <!-- Time in blocks -->
+                <div data-type="plan-time" class="col-1 border border-3 border-secondary p-1 text-center">
+                    8:00am
+                </div>
+                <!-- where the task text will display -->
+                <div data-type="plan-text" class="col-10 border border-3 border-secondary p-1 text-center">
+                </div>
+                <!-- save button -->
+                <div data-type="plan-save-btn" class="col-1 border border-3 border-secondary p-1 text-center">
+                    Save
+                </div>
+            </div>
+            <div id="9am" class="row">
+                <!-- Time in blocks -->
+                <div data-type="plan-time" class="col-1 border border-3 border-secondary p-1 text-center">
+                    9:00am
+                </div>
+                <!-- where the task text will display -->
+                <div data-type="plan-text" class="col-10 border border-3 border-secondary p-1 text-center">
+                </div>
+                <!-- save button -->
+                <div data-type="plan-save-btn" class="col-1 border border-3 border-secondary p-1 text-center">
+                    Save
+                </div>
+            </div>
+            <div id="10am" class="row">
+                <!-- Time in blocks -->
+                <div data-type="plan-time" class="col-1 border border-3 border-secondary p-1 text-center">
+                    10:00am
+                </div>
+                <!-- where the task text will display -->
+                <div data-type="plan-text" class="col-10 border border-3 border-secondary p-1 text-center">
+                </div>
+                <!-- save button -->
+                <div data-type="plan-save-btn" class="col-1 border border-3 border-secondary p-1 text-center">
+                    Save
+                </div>
+            </div>
+            <div id="11am" class="row">
+                <!-- Time in blocks -->
+                <div data-type="plan-time" class="col-1 border border-3 border-secondary p-1 text-center">
+                    11:00am
+                </div>
+                <!-- where the task text will display -->
+                <div data-type="plan-text" class="col-10 border border-3 border-secondary p-1 text-center">
+                </div>
+                <!-- save button -->
+                <div data-type="plan-save-btn" class="col-1 border border-3 border-secondary p-1 text-center">
+                    Save
+                </div>
+            </div>
+            <div id="12pm" class="row">
+                <!-- Time in blocks -->
+                <div data-type="plan-time" class="col-1 border border-3 border-secondary p-1 text-center">
+                    12:00pm
+                </div>
+                <!-- where the task text will display -->
+                <div data-type="plan-text" class="col-10 border border-3 border-secondary p-1 text-center">
+                </div>
+                <!-- save button -->
+                <div data-type="plan-save-btn" class="col-1 border border-3 border-secondary p-1 text-center">
+                    Save
+                </div>
+            </div>
+            <div id="1pm" class="row">
+                <!-- Time in blocks -->
+                <div data-type="plan-time" class="col-1 border border-3 border-secondary p-1 text-center">
+                    1:00pm
+                </div>
+                <!-- where the task text will display -->
+                <div data-type="plan-text" class="col-10 border border-3 border-secondary p-1 text-center">
+                </div>
+                <!-- save button -->
+                <div data-type="plan-save-btn" class="col-1 border border-3 border-secondary p-1 text-center">
+                    Save
+                </div>
+            </div>
+            <div id="2pm" class="row">
+                <!-- Time in blocks -->
+                <div data-type="plan-time" class="col-1 border border-3 border-secondary p-1 text-center">
+                    2:00pm
+                </div>
+                <!-- where the task text will display -->
+                <div data-type="plan-text" class="col-10 border border-3 border-secondary p-1 text-center">
+                </div>
+                <!-- save button -->
+                <div data-type="plan-save-btn" class="col-1 border border-3 border-secondary p-1 text-center">
+                    Save
+                </div>
+            </div>
+            <div id="3pm" class="row">
+                <!-- Time in blocks -->
+                <div data-type="plan-time" class="col-1 border border-3 border-secondary p-1 text-center">
+                    3:00pm
+                </div>
+                <!-- where the task text will display -->
+                <div data-type="plan-text" class="col-10 border border-3 border-secondary p-1 text-center">
+                </div>
+                <!-- save button -->
+                <div data-type="plan-save-btn" class="col-1 border border-3 border-secondary p-1 text-center">
+                    Save
+                </div>
+            </div>
+            <div id="4pm" class="row">
+                <!-- Time in blocks -->
+                <div data-type="plan-time" class="col-1 border border-3 border-secondary p-1 text-center">
+                    4:00pm
+                </div>
+                <!-- where the task text will display -->
+                <div data-type="plan-text" class="col-10 border border-3 border-secondary p-1 text-center">
+                </div>
+                <!-- save button -->
+                <div data-type="plan-save-btn" class="col-1 border border-3 border-secondary p-1 text-center">
+                    Save
+                </div>
+            </div>
+            <div id="5pm" class="row">
+                <!-- Time in blocks -->
+                <div data-type="plan-time" class="col-1 border border-3 border-secondary p-1 text-center">
+                    5:00pm
+                </div>
+                <!-- where the task text will display -->
+                <div data-type="plan-text" class="col-10 border border-3 border-secondary p-1 text-center">
+                </div>
+                <!-- save button -->
+                <div data-type="plan-save-btn" class="col-1 border border-3 border-secondary p-1 text-center">
+                    Save
+                </div>
+            </div>
+            <div id="6pm" class="row">
+                <!-- Time in blocks -->
+                <div data-type="plan-time" class="col-1 border border-3 border-secondary p-1 text-center">
+                    6:00pm
+                </div>
+                <!-- where the task text will display -->
+                <div data-type="plan-text" class="col-10 border border-3 border-secondary p-1 text-center">
+                </div>
+                <!-- save button -->
+                <div data-type="plan-save-btn" class="col-1 border border-3 border-secondary p-1 text-center">
+                    Save
+                </div>
+            </div>
+            <div id="7pm" class="row">
+                <!-- Time in blocks -->
+                <div data-type="plan-time" class="col-1 border border-3 border-secondary p-1 text-center">
+                    7:00pm
+                </div>
+                <!-- where the task text will display -->
+                <div data-type="plan-text" class="col-10 border border-3 border-secondary p-1 text-center">
+                </div>
+                <!-- save button -->
+                <div data-type="plan-save-btn" class="col-1 border border-3 border-secondary p-1 text-center">
+                    Save
+                </div>
+            </div>
+            <div id="8pm" class="row">
+                <!-- Time in blocks -->
+                <div data-type="plan-time" class="col-1 border border-3 border-secondary p-1 text-center">
+                    8:00pm
+                </div>
+                <!-- where the task text will display -->
+                <div data-type="plan-text" class="col-10 border border-3 border-secondary p-1 text-center">
+                </div>
+                <!-- save button -->
+                <div data-type="plan-save-btn" class="col-1 border border-3 border-secondary p-1 text-center">
+                    Save
+                </div>
+            </div>
+        </div>
+        </div>
+      </section>
+
+
+
+
+
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+      <script src="./assets/js/planner.js"></script>
+    </body>
+</html>
