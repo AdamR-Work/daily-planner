@@ -6,9 +6,9 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./assets/css/style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
         <title>Daily Planner</title>
 
     </head>
@@ -17,10 +17,11 @@
       <header>
           <h1>Daily Planner</h1>
           <p>Your helper to keep you organized throughout the day</p>  
+          <p id="currentDay" class="lead"></p>
         </header>
         <!-- containter for the planner -->
         <div class="container">
-        <div id="plan-holder" class="row">
+        <div id="plan-holder" class="row ">
             <!-- holder for info based on hour-->
             <div id="7am" class="row">
                 <!-- Time in blocks -->
@@ -29,6 +30,7 @@
                 </div>
                 <!-- where the task text will display -->
                 <div data-type="plan-text" class="col-10 border border-3 border-secondary p-1 text-center">
+                    <p>placeholder</p>
                 </div>
                 <!-- save button -->
                 <div data-type="plan-save-btn" class="col-1 border border-3 border-secondary p-1 text-center">
@@ -42,6 +44,7 @@
                 </div>
                 <!-- where the task text will display -->
                 <div data-type="plan-text" class="col-10 border border-3 border-secondary p-1 text-center">
+                    <p>placeholder</p>
                 </div>
                 <!-- save button -->
                 <div data-type="plan-save-btn" class="col-1 border border-3 border-secondary p-1 text-center">
@@ -55,6 +58,7 @@
                 </div>
                 <!-- where the task text will display -->
                 <div data-type="plan-text" class="col-10 border border-3 border-secondary p-1 text-center">
+                    <p>placeholder</p>
                 </div>
                 <!-- save button -->
                 <div data-type="plan-save-btn" class="col-1 border border-3 border-secondary p-1 text-center">
@@ -68,6 +72,7 @@
                 </div>
                 <!-- where the task text will display -->
                 <div data-type="plan-text" class="col-10 border border-3 border-secondary p-1 text-center">
+                    <p>placeholder</p>
                 </div>
                 <!-- save button -->
                 <div data-type="plan-save-btn" class="col-1 border border-3 border-secondary p-1 text-center">
@@ -81,6 +86,7 @@
                 </div>
                 <!-- where the task text will display -->
                 <div data-type="plan-text" class="col-10 border border-3 border-secondary p-1 text-center">
+                    <p>placeholder</p>
                 </div>
                 <!-- save button -->
                 <div data-type="plan-save-btn" class="col-1 border border-3 border-secondary p-1 text-center">
@@ -94,6 +100,7 @@
                 </div>
                 <!-- where the task text will display -->
                 <div data-type="plan-text" class="col-10 border border-3 border-secondary p-1 text-center">
+                    <p>placeholder</p>
                 </div>
                 <!-- save button -->
                 <div data-type="plan-save-btn" class="col-1 border border-3 border-secondary p-1 text-center">
@@ -107,6 +114,7 @@
                 </div>
                 <!-- where the task text will display -->
                 <div data-type="plan-text" class="col-10 border border-3 border-secondary p-1 text-center">
+                    <p>placeholder</p>
                 </div>
                 <!-- save button -->
                 <div data-type="plan-save-btn" class="col-1 border border-3 border-secondary p-1 text-center">
@@ -120,6 +128,7 @@
                 </div>
                 <!-- where the task text will display -->
                 <div data-type="plan-text" class="col-10 border border-3 border-secondary p-1 text-center">
+                    <p>placeholder</p>
                 </div>
                 <!-- save button -->
                 <div data-type="plan-save-btn" class="col-1 border border-3 border-secondary p-1 text-center">
@@ -133,6 +142,7 @@
                 </div>
                 <!-- where the task text will display -->
                 <div data-type="plan-text" class="col-10 border border-3 border-secondary p-1 text-center">
+                    <p>placeholder</p>
                 </div>
                 <!-- save button -->
                 <div data-type="plan-save-btn" class="col-1 border border-3 border-secondary p-1 text-center">
@@ -146,6 +156,7 @@
                 </div>
                 <!-- where the task text will display -->
                 <div data-type="plan-text" class="col-10 border border-3 border-secondary p-1 text-center">
+                    <p>placeholder</p>
                 </div>
                 <!-- save button -->
                 <div data-type="plan-save-btn" class="col-1 border border-3 border-secondary p-1 text-center">
@@ -159,6 +170,7 @@
                 </div>
                 <!-- where the task text will display -->
                 <div data-type="plan-text" class="col-10 border border-3 border-secondary p-1 text-center">
+                    <p>placeholder</p>
                 </div>
                 <!-- save button -->
                 <div data-type="plan-save-btn" class="col-1 border border-3 border-secondary p-1 text-center">
@@ -172,6 +184,7 @@
                 </div>
                 <!-- where the task text will display -->
                 <div data-type="plan-text" class="col-10 border border-3 border-secondary p-1 text-center">
+                    <p>placeholder</p>
                 </div>
                 <!-- save button -->
                 <div data-type="plan-save-btn" class="col-1 border border-3 border-secondary p-1 text-center">
@@ -185,6 +198,7 @@
                 </div>
                 <!-- where the task text will display -->
                 <div data-type="plan-text" class="col-10 border border-3 border-secondary p-1 text-center">
+                    <p>placeholder</p>
                 </div>
                 <!-- save button -->
                 <div data-type="plan-save-btn" class="col-1 border border-3 border-secondary p-1 text-center">
@@ -198,6 +212,7 @@
                 </div>
                 <!-- where the task text will display -->
                 <div data-type="plan-text" class="col-10 border border-3 border-secondary p-1 text-center">
+                    <p>placeholder</p>
                 </div>
                 <!-- save button -->
                 <div data-type="plan-save-btn" class="col-1 border border-3 border-secondary p-1 text-center">
@@ -211,9 +226,12 @@
 
 
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
 
-      
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
       <script src="./assets/js/planner.js"></script>

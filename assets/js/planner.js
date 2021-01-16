@@ -6,14 +6,38 @@ var planTime = $("[data-type='plan-time']")
 var planSaveBtn = $("[data-type='plan-save-btn']")
 
 
+
 // task text is clicked
 $(planText).on("click", function(){
-    var text = $(this)
-    .text()
-    .trim();
-// replace content with what is typed
+    var textBox = $(this);
+    // .text()
+    // .trim()
     console.log("hello");
 
-
+  if(textBox.data() == textBox.data("same")){
+      textBox.text(textBox.data("text OG"));
+  }else {
+      textBox.data("text OGG", textBox.text());
+      textBox.text(textBox.data("text-swap"));
+  }
+// replace content with what is typed
+    
+  
 
 });
+
+
+
+
+
+  // replace p element with a new textarea
+//   var textInput = $("<textarea>")
+  
+//   .val(text);
+// $(this).replaceWith(textInput);
+
+// // auto focus new element
+// textInput.trigger("focus");
+
+
+
