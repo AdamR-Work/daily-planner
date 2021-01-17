@@ -51,18 +51,7 @@ function saveToLocal(){
   var keyToSave = $(this).prev().prev().text().trim()
   localStorage.setItem(keyToSave, infoToSave)
 }
-// Drag and drop the tasks
-$( function() {
-  $( "#plan-holder" ).sortable({
-    revert: true
-    
-  });
-  $( "#plan-holder" ).draggable({
-    connectToSortable: "#plan-holder",
-    revert: "invalid"
-  });
-  $( "row , textarea" ).disableSelection();
-});
+
 
 // save button
 $(document).on("click", "button", saveToLocal)
@@ -98,3 +87,17 @@ $(clearForm).click(function(){
 
 // }}
 // $(document).on("click", timeSetter)
+
+
+// // Drag and drop the tasks
+// $( function() {
+//   $( "#plan-holder" ).sortable({
+//     revert: true
+    
+//   });
+//   $( "#plan-holder" ).draggable({
+//     connectToSortable: "#plan-holder",
+//     revert: "invalid"
+//   });
+//   $( "row , textarea" ).disableSelection();
+// });
