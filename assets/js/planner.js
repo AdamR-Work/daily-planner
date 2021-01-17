@@ -24,8 +24,7 @@ for (i=startTime; i <= endTime; i++){
     $('#'+i).addClass("h4")
     $('#'+i).addClass("mb-0")
     $('#'+(i+1)).addClass("h4")
-    $('#'+(i+1)).addClass("mb-0")
-            
+    $('#'+(i+1)).addClass("mb-0") 
   }else{
     //future
     $('#'+i).attr("style", "background: green")
@@ -40,8 +39,6 @@ for (i=startTime; i <= endTime; i++){
   }else {
     keyToGet = i-12 + ":00pm"
   }
-  // console.log(keyToGet)
-  // console.log(localStorage.getItem(keyToGet))
   $("#"+i).val(localStorage.getItem(keyToGet))
   // console.log($("#"+i).val())
 }
@@ -65,34 +62,11 @@ $( function() {
     revert: "invalid"
   });
   $( "row , textarea" ).disableSelection();
-}
-  
-
-);
-// my attempt at trying to get the time coloumn to be generated to help with the switching tasks on the fly to a different time
-var timeSetter =function(){
-for (i=startTime; i <= endTime; i++){
-  var setTimeSlot = ""
-
-  if(i<12){
-    setTimeSlot = i + ":00am"
-    
-  }else if(i==12){
-    setTimeSlot = "12:00pm"
-    
-  }else {
-    setTimeSlot = i-12 + ":00pm"
-  }
-  // console.log(keyToGet)
-  // console.log(localStorage.getItem(keyToGet))
-  $("#"+i+"A").attr("text",setTimeSlot)
-
-
-}}
+});
 
 // save button
 $(document).on("click", "button", saveToLocal)
-$(document).on("click", timeSetter)
+
 // clear tasks for end of day or next day use
 $(clearForm).click(function(){
     var theReset = confirm("Are you sure you wish to Clear page?");
@@ -102,4 +76,25 @@ $(clearForm).click(function(){
      window.location.reload();
     }
 })
-timeSetter();
+
+// // my attempt at trying to get the time coloumn to be generated to help with the switching tasks on the fly to a different time
+// var timeSetter =function(){
+// for (i=startTime; i <= endTime; i++){
+//   var setTimeSlot = ""
+
+//   if(i<12){
+//     setTimeSlot = i + ":00am"
+    
+//   }else if(i==12){
+//     setTimeSlot = "12:00pm"
+    
+//   }else {
+//     setTimeSlot = i-12 + ":00pm"
+//   }
+//   // console.log(keyToGet)
+//   // console.log(localStorage.getItem(keyToGet))
+//   $("#"+i+"A").attr("text",setTimeSlot)
+
+
+// }}
+// $(document).on("click", timeSetter)
